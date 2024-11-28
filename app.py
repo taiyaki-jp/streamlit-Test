@@ -25,3 +25,40 @@ data = {
 map_data = pd.DataFrame(data)
 # 地図に散布図を描く
 st.map(map_data)
+
+
+
+import plotly.graph_objects as go
+from PIL import Image
+st.title("wwwwww")
+st.caption("なぁにこれぇ")
+st.write("markdownも使える")
+
+animals = ['giraffes', 'orangutans', 'monkeys','???','null']
+populations = [20, 14, 23,54,-1]
+
+fig = go.Figure(data=[go.Bar(x=animals, y=populations)])
+
+fig.update_layout(
+    xaxis = dict(
+        tickangle = 0,
+        title_text = "Animal",
+        title_font = {"size": 20},
+        title_standoff = 25),
+    yaxis = dict(
+        title_text = "Populations",
+        title_standoff = 25),
+    title ='Title')
+
+# streatlimで表示するために
+st.plotly_chart(fig, use_container_width=True)
+
+code='''
+
+st.plotly_chart(fig, use_container_width=True)
+'''
+
+st.code(code,language="Python")
+
+img=Image.open("images/dog.jpg")
+st.image(img, width=400)
