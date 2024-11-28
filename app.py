@@ -8,6 +8,8 @@ st.write("てすと")
 import numpy as np
 import pandas as pd
 
+import plotly.graph_objects as go
+from PIL import Image
 answer = st.button('Say hello')
 
 if answer == True:
@@ -25,8 +27,6 @@ st.map(map_data)
 
 
 
-import plotly.graph_objects as go
-from PIL import Image
 st.title("wwwwww")
 st.caption("なぁにこれぇ")
 st.write("markdownも使える")
