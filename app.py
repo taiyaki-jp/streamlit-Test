@@ -8,9 +8,6 @@ st.write("てすと")
 import numpy as np
 import pandas as pd
 
-st.title("Web App")
-st.write("**これがstreamlitアプリ**")
-
 answer = st.button('Say hello')
 
 if answer == True:
