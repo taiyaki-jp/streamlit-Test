@@ -10,6 +10,11 @@ import pandas as pd
 
 import plotly.graph_objects as go
 from PIL import Image
+
+st.title("wwwwww")
+st.caption("なぁにこれぇ")
+st.write("markdownも使える")
+
 answer = st.button('Say hello')
 
 if answer == True:
@@ -25,11 +30,6 @@ map_data = pd.DataFrame(data)
 # 地図に散布図を描く
 st.map(map_data)
 
-
-
-st.title("wwwwww")
-st.caption("なぁにこれぇ")
-st.write("markdownも使える")
 
 animals = ['giraffes', 'orangutans', 'monkeys','???','null']
 populations = [20, 14, 23,54,-1]
